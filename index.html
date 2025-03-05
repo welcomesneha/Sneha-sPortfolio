@@ -1,0 +1,100 @@
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha's Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+         body {
+            padding: 40px; 
+            box-sizing: border-box;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            text-align: center;
+        }
+        .skill {
+            padding: 10px;
+            background: #a855f7; /* Purple Color Babe 💜 */
+            color: #fff;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease;
+            font-weight: bold;
+        }
+        .skill:hover {
+            transform: scale(1.1);
+            background: #7e22ce;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./img/pic1.jpg" alt="Sneha" class="profile-img">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1 class="typewriter">Welcome to My Portfolio</h1>
+            <p>I am a Web Developer & Designer</p>
+            <button onclick="downloadCV()">Download CV</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-content">
+                <p>Hello! I'm Sneha, a passionate and creative web developer who loves turning ideas into stunning digital experiences. I specialize in designing responsive websites that are both functional and visually appealing.</p>
+                <h3>My Skills:</h3>
+                <div class="skills-container">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Java 💜</span>
+                    <span class="skill">C++</span>
+                    <span class="skill">SQL</span>
+                </div>
+                <p>I always believe in writing clean code and creating user-friendly websites. Let's build something amazing together!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-card">Bachelor of Information Technology - SPPU University (2021-2025)</div>
+        <div class="education-card">Higher secondary education - SPMM HighSchool,shardanagar(Pune divisional board) (2019-2021)</div>
+        <div class="education-card">Secondary education - SJH School(Kolhapur university) (2017-2019)</div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: snehabagal2003@gmail.com</p>
+        <p>Phone: +91 90876544321</p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Sneha. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f9; /* Soft Gray Background */
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: #2c3e50; /* Dark Blue Standard */
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1abc9c; /* Aqua Hover Color */
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #1abc9c;
+    object-fit: cover;
+    object-position: center;
+    animation: pulse 2s infinite;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: 0.15em solid #1abc9c;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('hero.jpg') center/cover;
+    color: white;
+    font-size: 2rem;
+    animation: fadeIn 2s ease-in;
+}
+
+.education-card {
+    padding: 2rem;
+    margin: 1rem;
+    background: #ffffff; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+    background: #1abc9c; /* Aqua Hover Color */
+    color: #fff;
+}
+#contact p {
+    text-align: center;
+    font-weight: bold;
+    color: #7e22ce;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+#contact p:hover {
+    color: #a855f7;
+    text-decoration: underline;
+}
+
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+}
+
+form button {
+    background: #2c3e50;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #1abc9c; /* Aqua Hover Color */
+}
+footer p {
+    background: #7e22ce;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
